@@ -6,9 +6,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/love-heart-transparent.png",
+      "image": "./assets/radar-heart.jpg",
       "resizeMode": "contain",
-      "backgroundColor": "#ffcb12"
+      "backgroundColor": "#E32001"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
