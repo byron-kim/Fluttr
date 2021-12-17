@@ -20,7 +20,7 @@ function MainContainer() {
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName={homeName}
-        screenOptions={({ route }) => ({
+        screenOptions={ ({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
             let rn = route.name;
@@ -38,17 +38,16 @@ function MainContainer() {
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-        })}
-        tabBarOptions={{
           activeTintColor: 'tomato',
-          inactiveTintColor: 'grey',
-          labelStyle: { paddingBottom: 10, fontSize: 10 },
-          style: { padding: 10, height: 70}
-        }}>
+            inactiveTintColor: 'grey',
+            labelStyle: { paddingBottom: 10, fontSize: 10 },
+            style: { padding: 10, height: 70}
+        })}
+      >
 
-        <Tab.Screen name={homeName} component={HomeScreen} />
-        <Tab.Screen name={messagesName} component={MessagesScreen} />
-        <Tab.Screen name={settingsName} component={SettingsScreen} />
+      <Tab.Screen name={homeName} component={HomeScreen} />
+      <Tab.Screen name={messagesName} component={MessagesScreen} />
+      <Tab.Screen name={settingsName} component={SettingsScreen} />
 
       </Tab.Navigator>
     </NavigationContainer>
