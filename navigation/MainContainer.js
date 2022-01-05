@@ -27,14 +27,11 @@ function MainContainer() {
 
             if (rn === homeName) {
               iconName = focused ? 'home' : 'home-outline';
-
             } else if (rn === messagesName) {
               iconName = focused ? 'list' : 'list-outline';
-
             } else if (rn === settingsName) {
               iconName = focused ? 'settings' : 'settings-outline';
             }
-
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
